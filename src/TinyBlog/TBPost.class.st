@@ -91,19 +91,19 @@ TBPost >> notVisible [
 
 { #category : #printing }
 TBPost >> printOn: aStream [
-	aStream 
-		cr;	
-		nextPutAll: '*';
+	aStream
+		nextPut: Character cr;
+		nextPutAll: '**';
 		nextPutAll: self title;
-		nextPutAll: '*';
-		cr;
+		nextPutAll: '**';
+		nextPut: Character cr;
 		nextPutAll: '=========================';
-		cr;
+		nextPut: Character cr;
 		nextPutAll: self text;
-		cr;
+		nextPut: Character cr;
 		nextPutAll: 'category: ';
 		nextPutAll: self category;
-		cr.
+		nextPut: Character cr
 ]
 
 { #category : #accessing }
