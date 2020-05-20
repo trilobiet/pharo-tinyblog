@@ -21,7 +21,7 @@ TBScreenComponent >> children [
 	^ { header }
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #rendering }
 TBScreenComponent >> createHeaderComponent [
 	^ TBHeaderComponent new
 ]

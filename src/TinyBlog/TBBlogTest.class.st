@@ -51,7 +51,7 @@ TBBlogTest >> testAllBlogPosts [
 
 { #category : #tests }
 TBBlogTest >> testAllBlogPostsFromCategory [ 
-	self assert: (blog allBlogPostsFromCategory: 'First Category' )
+	self assert: (blog allBlogPostsFromCategory: 'First Category')
 		size equals: 1
 ]
 
